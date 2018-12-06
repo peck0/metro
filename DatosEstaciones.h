@@ -1,18 +1,17 @@
-#ifndef RESOLVER_H
-#define RESOLVER_H
+#ifndef DATOSESTACIONES_H
+#define DATOSESTACIONES_H
 #include "Estacion.h"
 #include<vector>
 #include "Linea.h"
 
-class Resolver
+class DatosEstaciones
 {
 	public:
-		Resolver();
+		DatosEstaciones();
 		std::vector<Estacion> getLinea1();
 		std::vector<Estacion> getLinea2();	
 		std::vector<Estacion> getTeleferico();
-			
-//		void listEstaciones();
+		
 
 		
 	protected:
@@ -22,6 +21,7 @@ class Resolver
 		std::vector<Estacion> linea2;
 		std::vector<Estacion> teleferico;		
 		Linea lin;
+		
 
 		
 };

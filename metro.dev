@@ -101,7 +101,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit4]
-FileName=Resolver.h
+FileName=DatosEstaciones.h
 CompileCpp=1
 Folder=
 Compile=1
@@ -111,7 +111,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit5]
-FileName=Resolver.cpp
+FileName=DatosEstaciones.cpp
 CompileCpp=1
 Folder=
 Compile=1

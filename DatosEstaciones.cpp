@@ -1,12 +1,12 @@
-#include "Resolver.h"
+#include "DatosEstaciones.h"
 
-Resolver::Resolver()
+DatosEstaciones::DatosEstaciones()
 {
 }
 
 
-std::vector<Estacion> Resolver::getLinea1(){
-	lin.setId(1); lin.setLineaNombre("L-1");	
+std::vector<Estacion> DatosEstaciones::getLinea1(){
+	lin.setId(1); lin.setLineaNombre("Linea 1");	
 	id = 0;
 	e.setDatos(++id, lin, "Mama Tingo",0,867);	
 	linea1.push_back(e);
@@ -42,8 +42,8 @@ std::vector<Estacion> Resolver::getLinea1(){
 	linea1.push_back(e);	
 	return linea1;
 }
-std::vector<Estacion> Resolver::getLinea2(){
-	lin.setDatos(2, "L-2");
+std::vector<Estacion> DatosEstaciones::getLinea2(){
+	lin.setDatos(2, "Linea 2");
 	id = 0;
 	e.setDatos(++id,lin,"Maria Montes",0,655);
 	linea2.push_back(e);
@@ -85,8 +85,8 @@ std::vector<Estacion> Resolver::getLinea2(){
 
 	return linea2;
 }
-std::vector<Estacion> Resolver::getTeleferico(){
-	lin.setDatos(3,"Telef");	
+std::vector<Estacion> DatosEstaciones::getTeleferico(){
+	lin.setDatos(3,"Teleférico");	
 	id = 0;	
 	e.setDatos(++id,lin,"Terminal Gualey",0,1420);
 	teleferico.push_back(e);
@@ -99,3 +99,5 @@ std::vector<Estacion> Resolver::getTeleferico(){
 	
 	return teleferico;
 }
+
+
